@@ -1,4 +1,5 @@
 import { Text, View, StyleSheet } from "react-native"
+import{colors} from "../../styles/colors"
 export default function Index () {
     return (
         // Export default é o metodo usado para dizer ao ExporRouter que esse componente é uma Rota.
@@ -19,20 +20,26 @@ const Styles = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: "center",
-        alignItems:"center",
-        flexDirection:"row",
+        alignItems:"flex-start",
+        flexDirection:"column",
+        //codigo para identificar as extremidades do container
+        borderColor:"red",
+        borderWidth:2
+        
     },
 
+   
     title:{
-        color: "blue",
+        color: colors.green[900],
         fontSize: 22,
+        borderColor:"red",
     },
 
     title2:{
-     color: "orange",
+     color: colors.gray[400],
      fontSize: 24,   
     },
-
+  
     title3:{
         color:"yellow",
         fontSize: 26
